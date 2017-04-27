@@ -1,0 +1,7 @@
+lab13: lab13.o
+	g++ -Wall -g -o lab13 lab13.o
+lab13.o: lab13.cpp
+	g++ -Wall -std=c++14 -g -O0 -pedantic-errors -c lab13.cpp
+clean:
+	rm -f lab13
+	rm -f lab13.o
